@@ -39,13 +39,13 @@ class Player {
 
   Animate() {
     // jamp
-    if (keys["Space"] || keys["KeyW"]) {
+    if (keys["Space"] || keys["KeyW"] || keys["ArrowUp"]) {
       this.Jamp();
     } else {
       this.jampTimer = 0;
     }
 
-    if (keys["ShiftLeft"] || keys["KeyS"]) {
+    if (keys["ShiftLeft"] || keys["KeyS"] || keys["ArrowDown"]) {
       this.h = this.originalHeight / 2;
     } else {
       this.h = this.originalHeight;
